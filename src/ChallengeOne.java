@@ -14,5 +14,6 @@ public class ChallengeOne {
     if (!remix) {
       System.out.println("Got some Reminder: " + remix);
     }
+
   }
 }
