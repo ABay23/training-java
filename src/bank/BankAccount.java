@@ -50,6 +50,24 @@ public class BankAccount {
     this.phoneNumber = phoneNumber;
   }
 
+  // * Calling a Constructor with a constructor, this would be Constructor B */
+  // * It needs to be executed before the second constructor */
+  public BankAccount() {
+    this("5544", 2.50, "Default Name",
+        "default address", "Default Phone");
+  }
+
+  // * This is Constructor A and is declared as the main constructor for the class
+  // */
+  public BankAccount(String accountNumber, double accountBalance, String customerName, String customerEmail,
+      String phoneNumber) {
+    this.accountNumber = accountNumber;
+    this.accountBalance = accountBalance;
+    this.customerName = customerName;
+    this.customerEmail = customerEmail;
+    this.phoneNumber = phoneNumber;
+  }
+
   // * Deposit Funds into the Account */
   public void depositFunds() {
     Scanner scanner = new Scanner(System.in);
